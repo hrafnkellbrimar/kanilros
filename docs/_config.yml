@@ -31,8 +31,7 @@ twitter_username: kanilros
 github_username:  hranfnkellbrimar
 
 # Build settings
-theme: jekyll-theme-modernist
-remote_theme: pages-themes/modernist@v0.2.0
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
