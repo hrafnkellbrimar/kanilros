@@ -31,7 +31,7 @@ twitter_username: kanilros
 github_username:  hranfnkellbrimar
 
 # Build settings
-theme: minima
+theme: midnight
 plugins:
   - jekyll-feed
 
