@@ -31,8 +31,8 @@ twitter_username: kanilros
 github_username:  hrafnkellbrimar
 
 # Build settings
-# theme: minima
-remote_theme: jekyll/minima
+theme: minima
+# remote_theme: jekyll/minima
 minima:
     skin: solarized
 plugins:
