@@ -34,7 +34,7 @@ github_username:  hrafnkellbrimar
 # theme: minima
 remote_theme: jekyll/minima
 minima:
-    skin: dark
+    skin: solarized
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
