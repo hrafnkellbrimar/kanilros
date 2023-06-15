@@ -28,16 +28,12 @@ url: https://kanilros.is  # the base hostname and protocol for your site, e.g. h
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kanilros
-github_username:  hrafnkellbrimar
 instagram_username: kanilros
-youtube_username: \@kanilros
 facebook_username: kanilros
 
 # Build settings
 theme: minima
 # remote_theme: jekyll/minima
-minima:
-    skin: solarized
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
