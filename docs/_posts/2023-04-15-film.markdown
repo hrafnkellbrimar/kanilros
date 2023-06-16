@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Kanilrós's first album **Film** released!"
+date:   2023-04-15 00:00:00 +0000
+categories: music
+---
+
+Kanilrós's debut album is out now and you can listen to it below:
+<iframe src="https://audiomack.com/embed/kanilros/album/film" scrolling="no" width="100%" height="400" scrollbars="no" frameborder="0"></iframe>
+
