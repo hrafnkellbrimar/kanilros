@@ -31,6 +31,16 @@ docs/
 └── watch.markdown       # Videos page
 ```
 
+## Deployment & CI/CD
+
+This project uses GitHub Actions for automated building and deployment.
+
+### Workflows
+- **Build and Deploy** (`.github/workflows/build-and-deploy.yml`): Builds and deploys to GitHub Pages on main branch
+- **Code Quality** (`.github/workflows/code-quality.yml`): Validates HTML, checks for broken links, scans for vulnerabilities
+
+See [OPTIMIZATION_GUIDE.md](./OPTIMIZATION_GUIDE.md) for detailed build pipeline information.
+
 ## Development Setup
 
 ### Prerequisites
