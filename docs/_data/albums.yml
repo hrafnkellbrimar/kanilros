@@ -5,7 +5,7 @@ albums:
     description: >-
       Kanilrós's debut album, an instrumental work mainly centered around the electric guitar.
       Features mandolins, bass, acoustic guitar, and a rich palette of electronic sounds.
-    soundcloud_playlist: "1627981054"
+    spotify_album: "5UM2Y59kE2A4wwLWv8zbZ0"
     
   - id: hive
     title: Hive
@@ -14,9 +14,39 @@ albums:
       Kanilrós's second album and first non-instrumental work. A primarily rock album
       with influences from funk, disco, metal, and folk. Features electric guitar, mandolins,
       acoustic guitars, bass, digital instruments, and vocals.
-    soundcloud_playlist: "1635041593"
+    spotify_album: "5N2sRTJHazcojEf2NkjzNG"
+
+  - id: tape
+    title: Tape
+    release_date: "2023-08-02"
+    description: >-
+      The third Kanilrós album: ten guitar-led rock songs released in the project's
+      prolific first year.
+    spotify_album: "7lMWCOn6b95V59W9x94psQ"
+
+  - id: ghosts
+    title: Ghosts
+    release_date: "2024-10-31"
+    description: >-
+      The nine-song fourth album, featuring Little Birds alongside songs about ghosts,
+      hidden people, vampires, friendship, and the afterlife.
+    spotify_album: "3YE8ZnQUiR7n80siglkDww"
+
+  - id: save-the-world
+    title: Save the World
+    release_date: "2025-09-05"
+    description: >-
+      Kanilrós's fifth and latest album: eleven varied tracks written, performed,
+      recorded, mixed, and produced independently.
+    spotify_album: "0Cq1tMrQWKSxzxwDYKYtJk"
 
 videos:
+  - id: little-birds
+    title: Little Birds
+    release_date: "2024-04-03"
+    description: The official music video for Little Birds, a song later included on Ghosts.
+    youtube_id: "mSeGsM5yXTk"
+
   - id: film-video
     title: Film
     bandcamp_id: "2985362402"

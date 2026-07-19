@@ -4,16 +4,39 @@ layout: page
 
 <div class="videos">
   {% for video in site.data.albums.videos %}
-    <article class="video">
-      <h2 class="visually-hidden">{{ video.title | escape }}</h2>
+    <article class="video" id="video-{{ video.id | slugify }}">
+      <div class="video__header">
+        {% if video.release_date %}
+          <p class="release__date">
+            Released <time datetime="{{ video.release_date }}">{{ video.release_date | date: "%e %B %Y" }}</time>
+          </p>
+        {% endif %}
+        <h2>{{ video.title | escape }}</h2>
+        {% if video.description %}<p>{{ video.description | escape }}</p>{% endif %}
+      </div>
       <div class="embed embed--video">
-        <iframe
-          title="Watch {{ video.title | escape }} on Bandcamp"
-          src="https://bandcamp.com/VideoEmbed?track={{ video.bandcamp_id }}&bgcol=171210&linkcol=a94f3f"
-          loading="lazy"
-          allow="fullscreen"
-          referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
+        {% if video.youtube_id %}
+          <a
+            class="video-link"
+            href="https://www.youtube.com/watch?v={{ video.youtube_id }}"
+            aria-label="Watch {{ video.title | escape }} by Kanilrós on YouTube">
+            <img
+              src="https://i.ytimg.com/vi/{{ video.youtube_id }}/maxresdefault.jpg"
+              alt=""
+              width="1280"
+              height="720"
+              loading="lazy">
+            <span class="video-link__label">Watch on YouTube <span aria-hidden="true">▶</span></span>
+          </a>
+        {% else %}
+          <iframe
+            title="Watch {{ video.title | escape }} on Bandcamp"
+            src="https://bandcamp.com/VideoEmbed?track={{ video.bandcamp_id }}&bgcol=171210&linkcol=a94f3f"
+            loading="lazy"
+            allow="fullscreen"
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        {% endif %}
       </div>
     </article>
   {% endfor %}

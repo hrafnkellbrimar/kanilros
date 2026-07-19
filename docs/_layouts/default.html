@@ -32,9 +32,9 @@
           <p>Icelandic underground music.</p>
         </div>
         <ul class="social-links" aria-label="Kanilrós elsewhere">
-          <li><a href="https://soundcloud.com/kanilros">SoundCloud</a></li>
-          <li><a href="https://instagram.com/kanilros">Instagram</a></li>
-          <li><a href="https://facebook.com/kanilros">Facebook</a></li>
+          {% for social in site.data.socials %}
+            <li><a href="{{ social.url }}">{{ social.label | escape }}</a></li>
+          {% endfor %}
           <li><a href="mailto:{{ site.email }}">Email</a></li>
         </ul>
       </div>
