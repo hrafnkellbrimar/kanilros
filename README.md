@@ -45,8 +45,10 @@ See [OPTIMIZATION_GUIDE.md](./OPTIMIZATION_GUIDE.md) for detailed build pipeline
 
 ### Prerequisites
 
-- Ruby 2.7 or later
-- Bundler (`gem install bundler`)
+- **Option A (Recommended - Docker)**: Docker Desktop installed (works with any Ruby version)
+- **Option B (Local)**: Ruby 2.7 or later (install via rbenv/asdf)
+
+See [RUBY_SETUP.md](./RUBY_SETUP.md) for detailed setup instructions.
 
 ### Installation
 
@@ -58,16 +60,28 @@ cd kanilros
 
 2. Install dependencies:
 ```bash
+# Option A: Using Docker (recommended)
+docker-compose up jekyll
+
+# Option B: Using local Ruby 2.7
 cd docs
 bundle install
 ```
 
 3. Start the development server:
+
+**With Docker**:
 ```bash
-bundle exec jekyll serve
+docker-compose up jekyll
+# Site runs at http://localhost:4000
 ```
 
-The site will be available at `http://localhost:4000`
+**With local Ruby 2.7**:
+```bash
+cd docs
+bundle exec jekyll serve
+# Site runs at http://localhost:4000
+```
 
 ## Development Workflow
 
