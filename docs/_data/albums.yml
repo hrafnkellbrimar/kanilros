@@ -1,7 +1,7 @@
 albums:
   - id: film
     title: Film
-    releaseDate: "2023-04-15"
+    release_date: "2023-04-15"
     description: >-
       Kanilrós's debut album, an instrumental work mainly centered around the electric guitar.
       Features mandolins, bass, acoustic guitar, and a rich palette of electronic sounds.
@@ -9,7 +9,7 @@ albums:
     
   - id: hive
     title: Hive
-    releaseDate: "2023-06-14"
+    release_date: "2023-06-14"
     description: >-
       Kanilrós's second album and first non-instrumental work. A primarily rock album
       with influences from funk, disco, metal, and folk. Features electric guitar, mandolins,
@@ -17,10 +17,10 @@ albums:
     soundcloud_playlist: "1635041593"
 
 videos:
-  - id: video1
-    title: Video 1
+  - id: film-video
+    title: Film
     bandcamp_id: "2985362402"
     
-  - id: video2
-    title: Video 2
+  - id: hive-video
+    title: Hive
     bandcamp_id: "2115153345"

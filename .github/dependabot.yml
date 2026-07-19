@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: bundler
+    directory: /docs
+    schedule:
+      interval: weekly
+      day: monday
+      time: "05:00"
+      timezone: Atlantic/Reykjavik
+    groups:
+      jekyll:
+        patterns:
+          - "jekyll*"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "05:15"
+      timezone: Atlantic/Reykjavik
