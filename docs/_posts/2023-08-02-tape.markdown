@@ -1,0 +1,11 @@
+---
+layout: release
+album_id: tape
+title: Tape
+description: Tape is the third Kanilrós album, a 10-track guitar-led rock record released in 2023.
+date: 2023-08-02 00:00:00 +0000
+categories: music
+image: https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/15/20/4d/15204de1-5fce-8b7e-590a-3d00ace10185/artwork.jpg/1000x1000bb.jpg
+---
+
+*Tape* is the third Kanilrós album: ten guitar-led songs released during the project’s prolific first year.

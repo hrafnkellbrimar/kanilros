@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: release
+album_id: hive
 title: Hive
-description: The second album by Kanilrós, bringing vocals into a rock-focused mix.
+description: Hive is the second album by Kanilrós, bringing vocals into an 11-track rock-focused mix.
 date: 2023-06-14 00:00:00 +0000
 categories: music
+image: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f2/f7/08/f2f708dd-2137-71b7-30d8-328bfb1eb5f9/artwork.jpg/1000x1000bb.jpg
 ---
 
 *Hive* is the second Kanilrós album and the first to feature vocals. Its rock foundation crosses into funk, disco, metal, and folk.
-
-{% include soundcloud-player.html title="Hive" playlist_id="1635041593" %}

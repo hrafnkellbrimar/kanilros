@@ -1,44 +1,79 @@
 albums:
   - id: film
     title: Film
+    permalink: /music/film/
     release_date: "2023-04-15"
+    track_count: 18
+    genre: Rock
+    label: Cinnamon Rose Records
     description: >-
       Kanilrós's debut album, an instrumental work mainly centered around the electric guitar.
       Features mandolins, bass, acoustic guitar, and a rich palette of electronic sounds.
     spotify_album: "5UM2Y59kE2A4wwLWv8zbZ0"
+    spotify_url: https://open.spotify.com/album/5UM2Y59kE2A4wwLWv8zbZ0
+    apple_music_url: https://music.apple.com/is/album/film/1682800877
+    artwork: https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d1/b4/fe/d1b4fe1a-9398-1135-a926-215cac0db944/artwork.jpg/1000x1000bb.jpg
     
   - id: hive
     title: Hive
+    permalink: /music/hive/
     release_date: "2023-06-14"
+    track_count: 11
+    genre: Rock
+    label: Cinnamon Rose Records
     description: >-
       Kanilrós's second album and first non-instrumental work. A primarily rock album
       with influences from funk, disco, metal, and folk. Features electric guitar, mandolins,
       acoustic guitars, bass, digital instruments, and vocals.
     spotify_album: "5N2sRTJHazcojEf2NkjzNG"
+    spotify_url: https://open.spotify.com/album/5N2sRTJHazcojEf2NkjzNG
+    apple_music_url: https://music.apple.com/is/album/hive/1691775228
+    artwork: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f2/f7/08/f2f708dd-2137-71b7-30d8-328bfb1eb5f9/artwork.jpg/1000x1000bb.jpg
 
   - id: tape
     title: Tape
+    permalink: /music/tape/
     release_date: "2023-08-02"
+    track_count: 10
+    genre: Rock
+    label: Cinnamon Rose Records
     description: >-
       The third Kanilrós album: ten guitar-led rock songs released in the project's
       prolific first year.
     spotify_album: "7lMWCOn6b95V59W9x94psQ"
+    spotify_url: https://open.spotify.com/album/7lMWCOn6b95V59W9x94psQ
+    apple_music_url: https://music.apple.com/is/album/tape/1696884237
+    artwork: https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/15/20/4d/15204de1-5fce-8b7e-590a-3d00ace10185/artwork.jpg/1000x1000bb.jpg
 
   - id: ghosts
     title: Ghosts
+    permalink: /music/ghosts/
     release_date: "2024-10-31"
+    track_count: 9
+    genre: Rock
+    label: Cinnamon Rose Records
     description: >-
       The nine-song fourth album, featuring Little Birds alongside songs about ghosts,
       hidden people, vampires, friendship, and the afterlife.
     spotify_album: "3YE8ZnQUiR7n80siglkDww"
+    spotify_url: https://open.spotify.com/album/3YE8ZnQUiR7n80siglkDww
+    apple_music_url: https://music.apple.com/is/album/ghosts/1773641392
+    artwork: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/02/4c/dd/024cddf0-b0b0-1680-9c05-169bdc675998/artwork.jpg/1000x1000bb.jpg
 
   - id: save-the-world
     title: Save the World
+    permalink: /music/save-the-world/
     release_date: "2025-09-05"
+    track_count: 11
+    genre: Alternative
+    label: Cinnamon Rose Records
     description: >-
       Kanilrós's fifth and latest album: eleven varied tracks written, performed,
       recorded, mixed, and produced independently.
     spotify_album: "0Cq1tMrQWKSxzxwDYKYtJk"
+    spotify_url: https://open.spotify.com/album/0Cq1tMrQWKSxzxwDYKYtJk
+    apple_music_url: https://music.apple.com/is/album/save-the-world/1835834302
+    artwork: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/aa/34/2b/aa342be4-0577-00e8-253b-3abeb62d3d54/artwork.jpg/1000x1000bb.jpg
 
 videos:
   - id: little-birds

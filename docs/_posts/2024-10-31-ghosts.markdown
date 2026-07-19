@@ -1,0 +1,11 @@
+---
+layout: release
+album_id: ghosts
+title: Ghosts
+description: Ghosts is the nine-track fourth album by Kanilrós, featuring Little Birds and Afterlife.
+date: 2024-10-31 00:00:00 +0000
+categories: music
+image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/02/4c/dd/024cddf0-b0b0-1680-9c05-169bdc675998/artwork.jpg/1000x1000bb.jpg
+---
+
+Released on Halloween 2024, *Ghosts* brings together songs about hidden people, vampires, friendship, memory, and the afterlife.

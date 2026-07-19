@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{% assign album = site.data.albums.albums | where: "id", page.album_id | first %}
+<article class="album-page">
+  <header class="shell album-hero">
+    <div class="album-hero__copy">
+      <a class="back-link" href="{{ '/listen/' | relative_url }}"><span aria-hidden="true">←</span> All music</a>
+      <p class="eyebrow">Kanilrós album · {{ album.release_date | date: "%Y" }}</p>
+      <h1>{{ album.title | escape }}</h1>
+      <p class="album-hero__intro">{{ album.description | escape }}</p>
+      <ul class="release__facts" aria-label="{{ album.title | escape }} album details">
+        <li>{{ album.track_count }} tracks</li>
+        <li>{{ album.genre | escape }}</li>
+        <li>{{ album.release_date | date: "%e %B %Y" }}</li>
+      </ul>
+      <div class="hero__actions">
+        <a class="button" href="{{ album.spotify_url }}">Play on Spotify <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="{{ album.apple_music_url }}">Apple Music <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <img class="album-hero__art" src="{{ album.artwork }}" alt="{{ album.title | escape }} album cover" width="1000" height="1000" fetchpriority="high">
+  </header>
+
+  <section class="shell album-player" aria-labelledby="listen-{{ album.id }}">
+    <div class="section-heading">
+      <p class="eyebrow">Listen</p>
+      <h2 id="listen-{{ album.id }}">Play {{ album.title | escape }}</h2>
+    </div>
+    {% include spotify-player.html title=album.title album_id=album.spotify_album %}
+  </section>
+
+  <section class="shell album-notes prose" aria-labelledby="about-{{ album.id }}">
+    <p class="eyebrow">Album notes</p>
+    <h2 id="about-{{ album.id }}">About {{ album.title | escape }}</h2>
+    {{ content }}
+  </section>
+</article>

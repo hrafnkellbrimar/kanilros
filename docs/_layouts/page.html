@@ -3,13 +3,13 @@ layout: default
 ---
 <article class="shell page">
   <header class="page__header">
-    <p class="eyebrow">Kanilrós</p>
+    <p class="eyebrow">{{ page.eyebrow | default: 'Kanilrós' | escape }}</p>
     <h1>{{ page.title | escape }}</h1>
     {% if page.description %}
       <p class="page__intro">{{ page.description | escape }}</p>
     {% endif %}
   </header>
-  <div class="prose">
+  <div class="{% if page.wide %}page__content page__content--wide{% else %}prose{% endif %}">
     {{ content }}
   </div>
 </article>

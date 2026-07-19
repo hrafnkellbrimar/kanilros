@@ -5,12 +5,25 @@ layout: page
 <div class="albums">
   {% for album in site.data.albums.albums %}
     <article class="release" id="album-{{ album.id | slugify }}">
-      <div class="release__copy">
-        <p class="release__date">
-          Released <time datetime="{{ album.release_date }}">{{ album.release_date | date: "%e %B %Y" }}</time>
-        </p>
-        <h2>{{ album.title | escape }}</h2>
-        <p>{{ album.description | escape }}</p>
+      <div class="release__identity">
+        <a class="release__art" href="{{ album.permalink | relative_url }}" aria-label="Explore {{ album.title | escape }} by Kanilrós">
+          <img src="{{ album.artwork }}" alt="{{ album.title | escape }} album cover" width="1000" height="1000" loading="lazy" decoding="async">
+        </a>
+        <div class="release__copy">
+          <p class="release__date">
+            Released <time datetime="{{ album.release_date }}">{{ album.release_date | date: "%e %B %Y" }}</time>
+          </p>
+          <h2><a href="{{ album.permalink | relative_url }}">{{ album.title | escape }}</a></h2>
+          <p>{{ album.description | escape }}</p>
+          <ul class="release__facts" aria-label="{{ album.title | escape }} album details">
+            <li>{{ album.track_count }} tracks</li>
+            <li>{{ album.genre | escape }}</li>
+          </ul>
+          <div class="release__actions">
+            <a href="{{ album.permalink | relative_url }}">Album details</a>
+            <a href="{{ album.apple_music_url }}">Apple Music <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
       </div>
       {% include spotify-player.html title=album.title album_id=album.spotify_album %}
     </article>

@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: release
+album_id: film
 title: Film
-description: The instrumental debut album by Kanilrós.
+description: Film is the 18-track instrumental debut album by Icelandic independent artist Kanilrós.
 date: 2023-04-15 00:00:00 +0000
 categories: music
+image: https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d1/b4/fe/d1b4fe1a-9398-1135-a926-215cac0db944/artwork.jpg/1000x1000bb.jpg
 ---
 
 *Film* is the instrumental debut by Kanilrós, centered on electric guitar with mandolins, bass, acoustic guitar, and electronic textures.
-
-{% include soundcloud-player.html title="Film" playlist_id="1627981054" %}
