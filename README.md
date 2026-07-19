@@ -9,7 +9,7 @@ The source for [kanilros.is](https://kanilros.is), the website of Icelandic unde
 - Ruby 4.0.6 and Bundler
 - GitHub Actions and GitHub Pages
 
-The site lives in `docs/`, matching GitHub Pages conventions. Content is stored in Markdown and `docs/_data/albums.yml`.
+The site lives in `docs/`, matching GitHub Pages conventions. Release metadata and canonical artwork live in `docs/_data/albums.yml`; each album also has an indexable page in `docs/_posts/`.
 
 ## Local development
 
@@ -24,7 +24,7 @@ The development server is available at <http://localhost:4000>.
 
 ## Validation
 
-Run the same build, internal-link validation, and dependency audit used in CI:
+Run the same build, metadata and JSON-LD validation, internal-link validation, and dependency audit used in CI:
 
 ```bash
 make check

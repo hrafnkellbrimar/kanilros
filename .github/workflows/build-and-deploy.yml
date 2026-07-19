@@ -40,6 +40,10 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: Validate metadata and structured data
+        working-directory: ./docs
+        run: bundle exec ruby scripts/validate-site.rb
+
       - name: Validate generated HTML
         working-directory: ./docs
         run: bundle exec htmlproofer ./_site --disable-external

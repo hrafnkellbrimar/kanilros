@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#171210">
+    <meta name="theme-color" content="#120d0c">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     {% seo %}
+    {% include structured-data.html %}
     <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="preconnect" href="https://is1-ssl.mzstatic.com" crossorigin>
+    {% if page.url == '/listen/' or page.album_id %}<link rel="preconnect" href="https://open.spotify.com">{% endif %}
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
     {% feed_meta %}
   </head>
@@ -15,7 +19,7 @@
     <header class="site-header">
       <div class="shell site-header__inner">
         <a class="site-mark" href="{{ '/' | relative_url }}" aria-label="Kanilrós home">
-          Kanilrós
+          <span aria-hidden="true"></span>Kanilrós
         </a>
         {% include navigation.html %}
       </div>
@@ -29,11 +33,12 @@
       <div class="shell site-footer__inner">
         <div>
           <p class="site-footer__title">Kanilrós</p>
-          <p>Icelandic underground music.</p>
+          <p>Independent music from Reykjanesbær, Iceland.</p>
+          <p class="site-footer__meta">© {{ 'now' | date: '%Y' }} Hrafnkell Brimar.</p>
         </div>
         <ul class="social-links" aria-label="Kanilrós elsewhere">
           {% for social in site.data.socials %}
-            <li><a href="{{ social.url }}">{{ social.label | escape }}</a></li>
+            <li><a href="{{ social.url }}" rel="me">{{ social.label | escape }}</a></li>
           {% endfor %}
           <li><a href="mailto:{{ site.email }}">Email</a></li>
         </ul>

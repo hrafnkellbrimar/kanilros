@@ -20,6 +20,7 @@ build:
 	cd docs && JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter
 
 check: build
+	cd docs && bundle exec ruby scripts/validate-site.rb
 	cd docs && bundle exec htmlproofer ./_site --disable-external
 	cd docs && bundle exec bundle-audit check --update
 

@@ -11,14 +11,17 @@
 # ============================================
 domain: kanilros.is
 title: Kanilrós
+tagline: Independent Icelandic rock from Reykjanesbær
 email: hrafnkellkanilros@gmail.com
-lang: en
+lang: en-IS
 author:
   name: Hrafnkell Brimar
   url: https://kanilros.is/about/
 description: >-
-  Independently recorded Icelandic underground music shaped by electric guitar,
-  mandolins, vocals, and digital instruments.
+  Kanilrós is the independent music project of Icelandic guitarist, songwriter,
+  singer, multi-instrumentalist, and producer Hrafnkell Brimar.
+image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/aa/34/2b/aa342be4-0577-00e8-253b-3abeb62d3d54/artwork.jpg/1000x1000bb.jpg
+logo: /assets/favicon.svg
 
 baseurl: ""
 url: https://kanilros.is
@@ -60,14 +63,14 @@ kramdown:
 # Site Output
 # ============================================
 permalink: /:categories/:title/
-timezone: UTC
+timezone: Atlantic/Reykjavik
 
 # ============================================
 # SEO and Metadata
 # ============================================
 twitter:
   username: kanilros
-  card: summary
+  card: summary_large_image
 
 # ============================================
 # Build Performance

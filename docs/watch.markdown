@@ -1,6 +1,9 @@
 ---
 layout: videos
-title: Watch
+title: Music videos
 permalink: /watch/
-description: Watch Little Birds and other videos from Kanilrós.
+eyebrow: Watch
+wide: true
+description: Watch the official Little Birds music video and other visual releases from Icelandic artist Kanilrós.
+image: https://i.ytimg.com/vi/mSeGsM5yXTk/maxresdefault.jpg
 ---
