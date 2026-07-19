@@ -1,16 +1,27 @@
 source "https://rubygems.org"
 
-# GitHub Pages with Ruby 2.7+ support
-# This version is optimized for GitHub Pages CI/CD environment
-# For local development with Ruby 4.x, use: make serve-docker
-gem "github-pages", "~> 228", group: :jekyll_plugins
+# Use latest Jekyll with Ruby 4.x support
+# This is compatible with modern Ruby versions
+gem "jekyll", "~> 4.3"
 
-# Minima theme for Jekyll
-gem "minima", "~> 2.5.1"
+# GitHub Pages optional (for feature parity, but not required)
+# Fallback to direct dependencies for better Ruby 4.x support
+# gem "github-pages"
 
-# Jekyll plugins for enhanced functionality
+# Minima theme
+gem "minima"
+
+# Jekyll plugins
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+  gem "jekyll-remote-theme"
+end
+
+# Development dependencies
+group :development do
+  gem "webrick", "~> 1.8"  # Required for Jekyll 4.x with Ruby 3.0+
 end
 
 # Windows and JRuby timezone data
@@ -24,6 +35,3 @@ gem "wdm", "~> 0.1.1", platforms: [:mingw, :x64_mingw, :mswin]
 
 # JRuby HTTP parser support
 gem "http_parser.rb", "~> 0.6.0", platforms: [:jruby]
-
-# NOTE: This Gemfile is optimized for Ruby 2.7 (used by GitHub Pages CI/CD)
-# If you're using Ruby 4.x locally, use Docker: docker run --rm -it -v "$(pwd):/site" jekyll/jekyll:latest bundle install
