@@ -12,7 +12,7 @@ layout: page
         <h2>{{ album.title | escape }}</h2>
         <p>{{ album.description | escape }}</p>
       </div>
-      {% include soundcloud-player.html title=album.title playlist_id=album.soundcloud_playlist %}
+      {% include spotify-player.html title=album.title album_id=album.spotify_album %}
     </article>
   {% endfor %}
 </div>

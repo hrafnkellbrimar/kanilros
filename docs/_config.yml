@@ -17,8 +17,8 @@ author:
   name: Hrafnkell Brimar
   url: https://kanilros.is/about/
 description: >-
-  Icelandic underground music shaped by electric guitar, mandolins, vocals,
-  and digital instruments.
+  Independently recorded Icelandic underground music shaped by electric guitar,
+  mandolins, vocals, and digital instruments.
 
 baseurl: ""
 url: https://kanilros.is
@@ -27,6 +27,18 @@ url: https://kanilros.is
 twitter_username: kanilros
 instagram_username: kanilros
 facebook_username: kanilros
+
+social:
+  name: Kanilrós
+  links:
+    - https://open.spotify.com/artist/1uXctS0gcqInSzZyKTGLK2
+    - https://youtube.com/@kanilros
+    - https://soundcloud.com/kanilros
+    - https://instagram.com/kanilros
+    - https://x.com/kanilros
+    - https://bsky.app/profile/kanilros.is
+    - https://facebook.com/kanilros
+    - https://music.apple.com/is/artist/kanilr%C3%B3s/1682781331
 
 # ============================================
 # Build Settings
