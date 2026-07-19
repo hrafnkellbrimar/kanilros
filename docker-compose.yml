@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    container_name: kanilros-jekyll
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/site
+      - jekyll-cache:/site/docs/.jekyll-cache
+      - bundle-cache:/usr/local/bundle
+    working_dir: /site/docs
+    command: >
+      bash -c "
+      bundle install &&
+      bundle exec jekyll serve --host 0.0.0.0 --livereload
+      "
+    environment:
+      - JEKYLL_ENV=development
+
+  # Alternative: Build only (no server)
+  build:
+    image: jekyll/jekyll:latest
+    container_name: kanilros-build
+    volumes:
+      - .:/site
+      - jekyll-cache:/site/docs/.jekyll-cache
+      - bundle-cache:/usr/local/bundle
+    working_dir: /site/docs
+    command: >
+      bash -c "
+      bundle install &&
+      bundle exec jekyll build --strict_front_matter
+      "
+    environment:
+      - JEKYLL_ENV=production
+
+volumes:
+  jekyll-cache:
+  bundle-cache:

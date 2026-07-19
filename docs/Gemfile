@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
-# Jekyll and GitHub Pages support
-# Using github-pages gem ensures compatibility with GitHub Pages deployment
+# GitHub Pages with Ruby 2.7+ support
+# This version is optimized for GitHub Pages CI/CD environment
+# For local development with Ruby 4.x, use: make serve-docker
 gem "github-pages", "~> 228", group: :jekyll_plugins
 
 # Minima theme for Jekyll
@@ -23,3 +24,6 @@ gem "wdm", "~> 0.1.1", platforms: [:mingw, :x64_mingw, :mswin]
 
 # JRuby HTTP parser support
 gem "http_parser.rb", "~> 0.6.0", platforms: [:jruby]
+
+# NOTE: This Gemfile is optimized for Ruby 2.7 (used by GitHub Pages CI/CD)
+# If you're using Ruby 4.x locally, use Docker: docker run --rm -it -v "$(pwd):/site" jekyll/jekyll:latest bundle install

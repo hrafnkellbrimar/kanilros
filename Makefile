@@ -25,7 +25,19 @@ install:
 	cd docs && bundle install
 
 serve:
+	@echo "⚠️  Note: Local builds require Ruby 2.7. Using GitHub Actions for deployment."
+	@echo "For local preview with Ruby 4.x, use: make serve-docker"
+	@echo ""
+	@echo "Alternatively, view the deployed site at: https://kanilros.is"
+
+serve-local:
+	@echo "⚠️  Ruby 2.7 or older required. Current Ruby: $$(ruby --version)"
 	cd docs && bundle exec jekyll serve --incremental --livereload
+
+serve-docker:
+	@echo "Starting Jekyll with Docker (requires Docker to be running)..."
+	docker run --rm -it -v "$$PWD:/site" -p 4000:4000 jekyll/jekyll:latest \
+		bash -c "cd /site/docs && bundle install && bundle exec jekyll serve --host 0.0.0.0"
 
 build:
 	cd docs && bundle exec jekyll build
