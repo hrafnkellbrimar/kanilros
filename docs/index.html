@@ -1,0 +1,32 @@
+---
+layout: home
+title: Kanilrós
+description: Icelandic underground music shaped by electric guitar, mandolins, vocals, and digital instruments.
+---
+
+<section class="hero shell">
+  <p class="eyebrow">Icelandic underground music</p>
+  <h1>Kanilrós</h1>
+  <p class="hero__intro">Guitar-led music moving between instrumental rock, folk, funk, metal, and electronic sound.</p>
+  <div class="hero__actions">
+    <a class="button" href="{{ '/listen/' | relative_url }}">Listen to the albums</a>
+    <a class="text-link" href="{{ '/watch/' | relative_url }}">Watch videos <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<section class="shell home-releases" aria-labelledby="releases-title">
+  <div class="section-heading">
+    <p class="eyebrow">Discography</p>
+    <h2 id="releases-title">Two records, one restless sound</h2>
+  </div>
+  <div class="release-grid">
+    {% for album in site.data.albums.albums reversed %}
+      <article class="release-card">
+        <p><time datetime="{{ album.release_date }}">{{ album.release_date | date: "%Y" }}</time></p>
+        <h3>{{ album.title | escape }}</h3>
+        <p>{{ album.description | escape }}</p>
+        <a href="{{ '/listen/' | append: '#album-' | append: album.id | relative_url }}">Listen to {{ album.title | escape }}</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>

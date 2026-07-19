@@ -4,14 +4,17 @@ layout: page
 
 <div class="videos">
   {% for video in site.data.albums.videos %}
-    <div class="video-player" role="region" aria-label="Bandcamp video player {{ forloop.index }}">
-      <iframe 
-        title="Bandcamp video player - {{ video.title }}"
-        class="bandcamp-embed"
-        src="https://bandcamp.com/VideoEmbed?track={{ video.bandcamp_id }}&bgcol=ffffff&linkcol=e99708" 
-        allowfullscreen
-        loading="lazy">
-      </iframe>
-    </div>
+    <article class="video">
+      <h2 class="visually-hidden">{{ video.title | escape }}</h2>
+      <div class="embed embed--video">
+        <iframe
+          title="Watch {{ video.title | escape }} on Bandcamp"
+          src="https://bandcamp.com/VideoEmbed?track={{ video.bandcamp_id }}&bgcol=171210&linkcol=a94f3f"
+          loading="lazy"
+          allow="fullscreen"
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </article>
   {% endfor %}
 </div>

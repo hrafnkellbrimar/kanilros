@@ -1,12 +1,13 @@
-<!-- Skip to main content link for accessibility -->
-<a href="#main-content" class="skip-to-content">Skip to main content</a>
-
-<!-- Navigation with semantic HTML and ARIA attributes -->
-<nav role="navigation" aria-label="Main navigation">
-  <ul>
-    <li><a href="/" aria-current="page">Home</a></li>
-    <li><a href="/about/">About</a></li>
-    <li><a href="/listen/">Listen</a></li>
-    <li><a href="/watch/">Watch</a></li>
+<nav aria-label="Main navigation">
+  <ul class="site-nav">
+    <li>
+      <a href="{{ '/listen/' | relative_url }}"{% if page.url == '/listen/' %} aria-current="page"{% endif %}>Listen</a>
+    </li>
+    <li>
+      <a href="{{ '/watch/' | relative_url }}"{% if page.url == '/watch/' %} aria-current="page"{% endif %}>Watch</a>
+    </li>
+    <li>
+      <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+    </li>
   </ul>
 </nav>

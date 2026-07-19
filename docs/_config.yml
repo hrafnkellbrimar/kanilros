@@ -12,11 +12,15 @@
 domain: kanilros.is
 title: Kanilrós
 email: hrafnkellkanilros@gmail.com
+lang: en
+author:
+  name: Hrafnkell Brimar
+  url: https://kanilros.is/about/
 description: >-
-  Welcome to the home of musician Kanilrós. Explore instrumental and rock music
-  featuring the electric guitar, mandolins, and digital instruments.
+  Icelandic underground music shaped by electric guitar, mandolins, vocals,
+  and digital instruments.
 
-baseurl: /
+baseurl: ""
 url: https://kanilros.is
 
 # Social media accounts
@@ -27,12 +31,10 @@ facebook_username: kanilros
 # ============================================
 # Build Settings
 # ============================================
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-remote-theme
 
 # ============================================
 # Markdown Processing
@@ -51,8 +53,9 @@ timezone: UTC
 # ============================================
 # SEO and Metadata
 # ============================================
-google_site_verification: ""
-msvalidate: ""
+twitter:
+  username: kanilros
+  card: summary
 
 # ============================================
 # Build Performance
@@ -63,9 +66,4 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - node_modules/
   - vendor/
-
-include:
-  - .htaccess
-  - _redirects
