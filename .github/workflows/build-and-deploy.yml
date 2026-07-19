@@ -34,15 +34,14 @@ jobs:
           ruby-version: '2.7'
           bundler-cache: true
           cache-version: 0
-          working-directory: ./docs
+          bundle-working-directory: ./docs
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
 
       - name: Build with Jekyll
-        working-directory: ./docs
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: cd docs && bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
 
