@@ -1,0 +1,17 @@
+---
+layout: page
+---
+
+<div class="videos">
+  {% for video in site.data.albums.videos %}
+    <div class="video-player" role="region" aria-label="Bandcamp video player {{ forloop.index }}">
+      <iframe 
+        title="Bandcamp video player - {{ video.title }}"
+        class="bandcamp-embed"
+        src="https://bandcamp.com/VideoEmbed?track={{ video.bandcamp_id }}&bgcol=ffffff&linkcol=e99708" 
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  {% endfor %}
+</div>

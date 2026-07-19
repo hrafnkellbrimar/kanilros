@@ -1,7 +1,29 @@
-_site
-.sass-cache
-.jekyll-cache
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+vendor/
+
+# OS
+.DS_Store
+Thumbs.db
+.env
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
 *~
-\#*\#
+#*#
+.#*
+
+# Ruby
+.bundle/
+.rbenv-version
+.ruby-version
+
+# Dependencies
+node_modules/
+
