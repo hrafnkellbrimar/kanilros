@@ -8,10 +8,11 @@ This is a static website built with [Jekyll](https://jekyllrb.com/) and hosted o
 
 ## Technology Stack
 
-- **Static Site Generator**: Jekyll 4.x (via github-pages gem)
-- **Theme**: Minima
-- **Styling**: SCSS
+- **Static Site Generator**: Jekyll 4.4.1 (latest, works with Ruby 3.3+/4.x)
+- **Theme**: Minima 2.5.2
+- **Styling**: SCSS with Sass Embedded
 - **Deployment**: GitHub Pages (automatic on push to `main` branch)
+- **Local Development**: Works with Ruby 4.x (no Docker needed)
 
 ## Project Structure
 
@@ -45,8 +46,8 @@ See [OPTIMIZATION_GUIDE.md](./OPTIMIZATION_GUIDE.md) for detailed build pipeline
 
 ### Prerequisites
 
-- **Option A (Recommended - Docker)**: Docker Desktop installed (works with any Ruby version)
-- **Option B (Local)**: Ruby 2.7 or later (install via rbenv/asdf)
+- Ruby 3.3+ (or 4.x with latest updates)
+- Bundler (included with Ruby)
 
 See [RUBY_SETUP.md](./RUBY_SETUP.md) for detailed setup instructions.
 
@@ -60,25 +61,13 @@ cd kanilros
 
 2. Install dependencies:
 ```bash
-# Option A: Using Docker (recommended)
-docker-compose up jekyll
-
-# Option B: Using local Ruby 2.7
 cd docs
 bundle install
 ```
 
 3. Start the development server:
 
-**With Docker**:
 ```bash
-docker-compose up jekyll
-# Site runs at http://localhost:4000
-```
-
-**With local Ruby 2.7**:
-```bash
-cd docs
 bundle exec jekyll serve
 # Site runs at http://localhost:4000
 ```
