@@ -24,11 +24,21 @@ Only a push to `main` uploads and deploys the Pages artifact. The deploy job rec
 
 Run `make update` to refresh gems manually, then run `make check` before merging the lockfile change.
 
-## Performance
+## Hosting and performance
 
-The production site uses generated HTML and one plain CSS file. It has no client-side JavaScript, web-font downloads, theme runtime, or image pipeline. Canonical album artwork is served by Apple Music's image CDN, while third-party audio and video players load lazily.
+GitHub Pages is the sole deployment target. The repository's Actions workflow
+builds and validates the site, then deploys the generated artifact after a push
+to `main`. Keeping one deployment path avoids configuration drift and makes the
+workflow that CI validates the same workflow that publishes production.
 
-GitHub Pages does not support custom response headers. The optional `netlify.toml` contains security and cache headers for a Netlify deployment; equivalent headers require a CDN or proxy when GitHub Pages remains the origin.
+Netlify would be worth reconsidering if deploy previews, edge redirects, or
+custom response headers become requirements. Until then, its additional build
+configuration and hosting surface do not benefit this static site.
+
+The production site uses generated HTML and one plain CSS file. It has no
+client-side JavaScript, web-font downloads, theme runtime, or image pipeline.
+Canonical album artwork is served by Apple Music's image CDN, while third-party
+audio and video players load lazily.
 
 ## Content updates
 
