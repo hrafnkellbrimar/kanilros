@@ -38,7 +38,8 @@ album_ids = structured_nodes
 errors << "missing MusicGroup structured data" unless music_group
 errors << "expected five unique MusicAlbum entities" unless album_ids.length == 5
 
-abort(errors.join("\n")) unless errors.empty?
+abort(errors.join("
+")) unless errors.empty?
 
 html_count = Dir.glob(File.join(site_root, "**", "*.html")).length
 puts "Validated #{html_count} HTML files and #{album_ids.length} albums"
