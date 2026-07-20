@@ -19,7 +19,8 @@ Only a push to `main` uploads and deploys the Pages artifact. The deploy job rec
 - `Gemfile.lock` makes local and CI builds reproducible.
 - Dependabot proposes weekly Bundler and GitHub Actions updates.
 - Runtime gems use compatible-version constraints; the lockfile records exact versions.
-- GitHub Actions use current stable major tags so Dependabot can surface new majors.
+- GitHub Actions are pinned to full commit SHAs, with major-version comments so
+  Dependabot can still surface updates without introducing mutable references.
 
 Run `make update` to refresh gems manually, then run `make check` before merging the lockfile change.
 
@@ -51,6 +52,7 @@ When adding an album, update `docs/_data/albums.yml` and add a matching post wit
 ```bash
 make serve   # development server with live reload
 make build   # strict production build
+make check-actions # action-pin policy and regression tests
 make check   # build, SEO/HTML validation, dependency audit
 make clean   # remove generated Jekyll files
 ```
