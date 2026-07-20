@@ -2,14 +2,14 @@
 layout: page
 title: About
 permalink: /about/
-description: Kanilrós is the independent music project of Icelandic guitarist, songwriter, singer, and producer Hrafnkell Brimar.
+description: Kanilrós is the independent music project of Icelandic guitarist, songwriter, singer, and producer Hrafnkell Brimar Hallmundsson.
 eyebrow: The artist
 image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/aa/34/2b/aa342be4-0577-00e8-253b-3abeb62d3d54/artwork.jpg/1000x1000bb.jpg
 ---
 
 ## The project
 
-Kanilrós is the independent music project of Hrafnkell Brimar, a guitarist, songwriter, singer, and multi-instrumentalist from Reykjanesbær, Iceland. The name means “Cinnamon Rose.” Hrafnkell writes, performs, records, mixes, and produces the music himself.
+Kanilrós is the independent music project of Hrafnkell Brimar Hallmundsson, a guitarist, songwriter, singer, and multi-instrumentalist from Reykjanesbær, Iceland. The name means “Cinnamon Rose.” Hrafnkell writes, performs, records, mixes, and produces the music himself.
 
 <dl class="artist-facts" markdown="0">
 <div>
