@@ -8,4 +8,23 @@ categories: music
 image: https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d1/b4/fe/d1b4fe1a-9398-1135-a926-215cac0db944/artwork.jpg/1000x1000bb.jpg
 ---
 
-*Film* is the instrumental debut by Kanilrós, centered on electric guitar with mandolins, bass, acoustic guitar, and electronic textures.
+*Film* is the instrumental debut by Kanilrós. Released on 15 April 2023, the 18-track album introduced the project through music centered on electric guitar, supported by mandolins, bass, acoustic guitar, and electronic textures.
+
+### The beginning of Kanilrós
+
+As the first Kanilrós release, *Film* established the project's independent approach: the music was written, performed, recorded, mixed, and produced by Hrafnkell Brimar Hallmundsson. With no vocals, the instruments carry the melodies and give each piece its own shape.
+
+<!-- Add a personal paragraph here: What prompted you to begin Kanilrós? Why was an instrumental album the right starting point? Where did the title Film come from? -->
+
+### Sound and instrumentation
+
+Electric guitar is the main voice across the record, but the arrangements also draw on acoustic strings and electronic sounds. That combination created the broad instrumental palette that would continue to develop on later Kanilrós albums.
+
+<!-- Add specific details here: Which instruments, sounds, or recording experiments were most important? Were there one or two tracks that defined the direction of the album? -->
+
+### Credits
+
+- Written, performed, recorded, mixed, and produced by Hrafnkell Brimar Hallmundsson
+- Released by Cinnamon Rose Records
+
+<!-- Optional next step: add a "Selected tracks" section with a short note about two or three pieces. -->
