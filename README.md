@@ -6,14 +6,14 @@ The source for [kanilros.is](https://kanilros.is), the website of Icelandic unde
 
 - Jekyll 4.4 with local HTML layouts
 - Plain CSS with no client-side JavaScript or external font requests
-- Ruby 4.0.6 and Bundler
+- Ruby 4.0.7 and Bundler
 - GitHub Actions and GitHub Pages
 
 The site lives in `docs/`, matching GitHub Pages conventions. Release metadata and canonical artwork live in `docs/_data/albums.yml`; each album also has an indexable page in `docs/_posts/`.
 
 ## Local development
 
-Install Ruby 4.0.6 with your preferred version manager, then run:
+Install Ruby 4.0.7 with your preferred version manager, then run:
 
 ```bash
 make install
